@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+>
+
+<meta name="theme-color" content="#ffffff">
+
+<title>BOT NANO</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+
+  <aside
+    class="sidebar"
+    id="sidebar"
+  >
+
+    <div class="brand">
+
+      <div class="brand-logo">
+        N
+      </div>
+
+      <div>
+        <strong>BOT NANO</strong>
+        <span>AI văn bản</span>
+      </div>
+
+    </div>
+
+    <button
+      class="new-chat"
+      id="newChat"
+    >
+      + Cuộc trò chuyện mới
+    </button>
+
+    <div class="recent-title">
+      Gần đây
+    </div>
+
+    <div
+      class="history"
+      id="history"
+    ></div>
+
+    <div class="side-bottom">
+
+      <button id="themeBtn">
+        Giao diện
+      </button>
+
+      <button id="languageBtn">
+        Tiếng Việt
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <!-- MAIN -->
+
+  <main class="main">
+
+    <header class="topbar">
+
+      <button
+        class="menu"
+        id="menuBtn"
+      >
+        ☰
+      </button>
+
+      <div class="title">
+
+        <span class="online"></span>
+
+        BOT NANO
+
+      </div>
+
+      <button
+        class="clear"
+        id="clearBtn"
+      >
+        Xóa
+      </button>
+
+    </header>
+
+
+    <section
+      class="chat"
+      id="chat"
+    >
+
+      <div
+        class="welcome"
+        id="welcome"
+      >
+
+        <div class="big-logo">
+          N
+        </div>
+
+        <h1>
+          Xin chào,
+          <span id="userName">
+            bạn
+          </span>
+        </h1>
+
+        <p>
+          Tôi là BOT NANO.
+          Hãy hỏi tôi bất cứ điều gì bằng văn bản.
+        </p>
+
+        <div class="suggestions">
+
+          <button
+            data-prompt="Giải thích một khái niệm khó theo cách thật dễ hiểu."
+          >
+            Giải thích một khái niệm
+          </button>
+
+          <button
+            data-prompt="Giúp tôi lập kế hoạch học tập hiệu quả."
+          >
+            Lập kế hoạch học tập
+          </button>
+
+          <button
+            data-prompt="Viết một đoạn văn ngắn, tự nhiên và dễ hiểu."
+          >
+            Viết một đoạn văn
+          </button>
+
+          <button
+            data-prompt="Cho tôi vài ý tưởng làm một website đơn giản."
+          >
+            Ý tưởng website
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="messages"
+        id="messages"
+      ></div>
+
+    </section>
+
+
+    <!-- COMPOSER -->
+
+    <div class="composer-area">
+
+      <form
+        class="composer"
+        id="composer"
+      >
+
+        <textarea
+          id="input"
+          rows="1"
+          maxlength="8000"
+          placeholder="Nhắn tin cho BOT NANO..."
+        ></textarea>
+
+        <button
+          class="send"
+          id="send"
+          type="submit"
+        >
+          ↑
+        </button>
+
+      </form>
+
+      <div class="note">
+        BOT NANO có thể mắc lỗi. Hãy kiểm tra thông tin quan trọng.
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+
+<!-- NAME MODAL -->
+
+<div
+  class="modal"
+  id="nameModal"
+>
+
+  <div class="modal-box">
+
+    <div class="modal-logo">
+      N
+    </div>
+
+    <h2>
+      Chào mừng bạn
+    </h2>
+
+    <p>
+      Nhập tên của bạn để bắt đầu sử dụng BOT NANO.
+    </p>
+
+    <input
+      id="nameInput"
+      maxlength="80"
+      placeholder="Tên của bạn"
+    >
+
+    <button id="startBtn">
+      Bắt đầu
+    </button>
+
+  </div>
+
+</div>
+
+
+<div
+  class="toast"
+  id="toast"
+></div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
